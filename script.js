@@ -5,11 +5,23 @@ const counterElement = document.getElementById('counter');
 const fish = document.getElementById('fish');
 const hand = document.getElementById('hand');
 const gameContainer = document.getElementById('game-container');
+const startButton = document.getElementById('start-button');
+const gameTitle = document.getElementById('game-title');
 
 //update the counter display
 function updateCounter() {
     counterElement.textContent = `Score: ${score}`;
 }
+
+function startGame() {
+    startButton.style.display = 'none';
+    gameTitle.style.display = 'none';
+    fish.style.display = 'block';
+
+    moveFish();
+}
+
+startButton.addEventListener('click', startGame);
 
 //event listener for clicking the fish
 fish.addEventListener('click', () => {

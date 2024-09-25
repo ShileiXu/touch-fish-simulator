@@ -29,25 +29,57 @@ body {
     border: 2px solid #000;
     border-radius: 10px;
     cursor: none; /* Hide default cursor */
+    overflow: hidden;
+}
+
+#game-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#start-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#start-button:hover {
+    background-color: #218838;
+}
+
+#start-button:active {
+    transform: translate(-50%, -50%) scale(0.95);
 }
 
 #fish {
     position: absolute;
-    width: 100px;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 500px;
+    cursor: none;
     transition: transform 0.1s;
 }
 
 #fish:active {
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: scale(0.95);
 }
 
 #hand {
     position: absolute;
-    width: 150px;
+    width: 50px;
     pointer-events: none; 
     z-index: 10; 
     transform: translate(-50%, -50%); 
