@@ -14,11 +14,20 @@ body {
 }
 
 #counter {
-    font-size: 2rem;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.5rem;
     margin: 20px 0;
     color: #fff;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 2px 6px #295680;
+    font-weight: bold;
 }
+
+/* #score, #timer {
+    
+} */
 
 #game-container {
     position: relative;
@@ -40,6 +49,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
+    text-shadow: 2px 2px 6px #223560;
 }
 
 #start-button {
@@ -83,4 +93,18 @@ body {
     pointer-events: none; 
     z-index: 10; 
     transform: translate(-50%, -50%); 
+}
+
+#game-over {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
