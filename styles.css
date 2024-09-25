@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #87CEEB; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#counter {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    /* background-image: url('water-background.jpg');  */
+    background-size: cover;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: none; /* Hide default cursor */
+}
+
+#fish {
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+}
+
+#fish:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+#hand {
+    position: absolute;
+    width: 150px;
+    pointer-events: none; 
+    z-index: 10; 
+    transform: translate(-50%, -50%); 
+}
