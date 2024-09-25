@@ -32,7 +32,7 @@ function startTimer() {
             clearInterval(timerInterval);
             endGame();
         }
-    }, 2000);
+    }, 1000);
 }
 
 function startGame() {
